@@ -1,1 +1,1 @@
-telegram_bot_token = ''
+my_telegram_bot = ''
