@@ -22,9 +22,9 @@ if __name__ == '__main__':
     application = ApplicationBuilder().token(my_telegram_bot).build()
 
     start_handler = CommandHandler('start', start)
-    application.add_handler(start_handler)
-
     hello_handler = CommandHandler('hello', hello)
+
+    application.add_handler(start_handler)
     application.add_handler(hello_handler)
 
     application.run_polling()
